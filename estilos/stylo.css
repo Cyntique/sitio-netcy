@@ -1,0 +1,383 @@
+/*****************************************************
+***********ESTILOS GENERALES**************************
+******************************************************/
+
+/***
+Color principal: #ff58cc
+Color secundario: #8b99f8
+********/
+*{
+    margin: 0;
+    max-width: 100%;
+    font-size: 1em;
+    line-height: 1.8;
+    font-family: 'Raleway Regular';
+}
+body{
+    background-color: rgb(254, 254, 254);
+}
+@font-face{
+    font-family: 'Monserrat';
+    src: url(./fuentes/MontserratAlternates-SemiBold.ttf);
+}
+@font-face{
+    font-family: 'Raleway Regular';
+    src: url(./fuentes/Raleway-Regular.ttf);
+}
+@font-face{
+    font-family: 'Raleway light';
+    src: url(./fuentes/Raleway-Light.ttf);
+}
+
+
+h1{
+    font-family: 'Monserrat';
+}
+
+h2{
+    font-family: 'Monserrat';
+}
+
+p{
+    font-family: 'Raleway Regular';
+    color: rgb(87, 85, 85);
+}
+img{
+    max-width: 100%;
+}
+
+.flex-lado{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.flex-vertical{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.container{
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: 2em;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.titulos h4{
+    font-family: 'Monserrat';
+    font-size: 3em;
+    color:#8b99f8;
+    margin-top: 1em;
+}
+
+header{
+    height: 5.2em;
+    z-index: 99;
+    background-color: rgba(254, 254, 254, 0.993);
+}
+.head{
+    position: fixed;
+    width: 100%;
+    transition: linear 1s;
+}
+/******Scroll****/
+
+.headscroll{
+    height: 4em;
+    box-shadow: rgba(97, 97, 97, 0.397) 1px 2px 2px 2px;
+    z-index: 99;
+    background-color: rgba(254, 254, 254, 0.863);
+}
+
+
+/****************************************************************/
+nav#navi {
+     justify-content: space-between;
+    
+}
+nav#navi ul#menu{
+    list-style: none;
+    padding-right: 1em;
+}
+nav#navi ul#menu li a{
+    text-decoration: none;
+    padding-right: 1.4em;
+    color: rgb(65, 65, 65);
+    align-items: center;
+    display: flex;
+}
+nav#navi ul#menu li a i{
+    font-size: 1.3em;
+    padding-right: 0.2em;
+}
+
+@media (max-width: 600px) {
+    nav#navi ul#menu li a span {
+      display: none;
+    }
+  }
+  
+nav#navi #logo img{
+    max-width: 6em;
+    height: auto;
+    padding-top: 0.5em;
+    padding-left: 2em;
+    transition: linear 2s;
+}
+
+
+div#logo p#title{
+    font-family: 'Monserrat';
+    font-size: 2em;
+    color: #8b99f8;
+}
+section#banner {
+    background-image: url(../img/banner2.jpg);
+    padding-top: 8em;
+    padding-bottom: 3em;
+    background-position: center;
+    background-size: cover;
+    text-align: left;
+    justify-content: left;
+}
+h3.title-banner {
+    font-family: 'Monserrat';
+    font-size: 3em;
+    color: white;
+    padding: 1em;
+    
+}
+section#about {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+section#about h1{
+    font-size: 2em;
+}
+div#bloques{
+    margin-top: 2em;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+div#bloques .items{
+    padding-top: 1em;
+    padding-right: 1em;
+    max-width: 350px;
+    flex-shrink: 1;
+    flex-grow: 0;
+   
+}
+div#bloques .items p{
+     text-align: center;
+}
+div#bloques .items i{
+    font-size: 5em;
+    color: #800aa3 ;
+}
+div#bloques .items i:hover{
+    color: #8b99f8;
+    
+}
+#services-two{
+    margin-top: 5em;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    
+   
+}
+#services-two .box{
+    border: blueviolet solid 1px;
+    text-align: left;
+    padding: 1em;
+    margin-right: 10px;
+    margin-left: 10px;
+    max-width: 230px;
+    box-sizing: border-box;
+    margin-bottom: 1em;
+    flex-shrink: 0.5;
+    flex-grow: 1;
+}
+#services-two .box i{
+    font-size: 3em;
+    color: #800aa3;
+    
+}
+#services-two .box i:hover{
+    animation-name: rotar;
+    animation-duration: 2s;
+    
+}
+section#portfolio{
+    flex-wrap: wrap;
+}
+section#portfolio div#image{
+    width: 40%;
+    margin: 1em;
+}
+section#portfolio div#image img{
+    height: auto;
+    object-fit: cover;
+}
+section#call-action{
+     background-image: url(../img/banner.jpg);
+     background-size: cover;
+     background-attachment: fixed;
+     background-position: center;
+     
+}
+section#call-action div{
+    background-image: linear-gradient(#4c0571bf, #8bc6f8f2);
+    padding: 5em;
+    
+}
+section#call-action h3{
+    font-size: 2em;
+    color: white;
+    
+}
+section#call-action p {
+    color: white;
+}
+#contact {
+    margin-bottom: 6em;
+}
+#contact form{
+    text-align: left;
+    margin-right: 20%;
+    margin-left: 20%;
+    padding-bottom: 2em;
+}
+#contact form input{
+    border: solid gray 1px;
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+#contact form button{
+    font-size: 2em;
+    width: 40%;
+    align-self: center;
+    background-color:#6c0575;
+    color: white;
+    border: none;
+}
+#blog .post {
+    width: 25%;
+    text-align: center;
+    box-sizing: border-box;
+    padding-right: 2px;
+    align-self: flex-start;
+    flex-shrink: 0.5;
+    flex-grow: 1;
+}
+#blog .post img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    overflow: hidden;
+    transition: 0.5s all ease-in-out;
+}
+#blog .post img:hover{
+    transform: scale(0.8)
+}
+.socialbox img{
+    max-width: 64px;
+    margin-right: 2em;
+    transition: all ease-in-out;
+}
+.socialbox img:hover{
+    animation-name: uping;
+    animation-duration: 2s;
+}
+footer{
+    text-align: center;
+    padding: 2em;
+    background-color: rgb(196, 196, 196);
+}
+footer img{
+    align-self: center;
+    max-width: 4em;
+}
+/*******Modal*********/
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.35s ease-in;
+  }
+  
+  .modal.is-visible {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0.2s;
+  }
+  
+  .modal-dialog {
+    position: relative;
+    max-width: 800px;
+    max-height: 80vh;
+    border-radius: 5px;
+    background: #fff;
+    overflow: auto;
+    cursor: default;
+   
+  }
+  
+  .modal-dialog > * {
+    padding: 1rem;
+  }
+  
+  .modal-header,
+  .modal-footer {
+    background: #efefef;
+  }
+  
+  .modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .modal-header .close-modal {
+    font-size: 1.5rem;
+  }
+  
+  .modal p + p {
+    margin-top: 1rem;
+  }
+  
+/******Animaciones*******/
+@keyframes rotar {
+    0%, 100% {
+    transform: rotate(360deg);
+    }
+    75% {
+    transform: rotate(-360deg);
+    }
+    
+    }
+
+@keyframes uping{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-15px);
+    }
+    50%{
+        transform: translateY(-30px);
+    }
+}
