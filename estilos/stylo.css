@@ -12,6 +12,7 @@ Color secundario: #8b99f8
     font-size: 1em;
     line-height: 1.8;
     font-family: 'Raleway Regular';
+    scroll-behavior: smooth;
 }
 body{
     background-color: rgb(254, 254, 254);
@@ -134,7 +135,7 @@ div#logo p#title{
     color: #8b99f8;
 }
 section#banner {
-    background-image: url(../img/banner2.jpg);
+    background-image: url(../img/banner2.webp);
     padding-top: 8em;
     padding-bottom: 3em;
     background-position: center;
@@ -215,13 +216,19 @@ section#portfolio{
 section#portfolio div#image{
     width: 40%;
     margin: 1em;
+    background-color: #4c3ec788;
 }
 section#portfolio div#image img{
     height: auto;
     object-fit: cover;
+    transition: 0.5s all ease-in-out;
 }
+section#portfolio div#image img:hover{
+    transform: scale(0.8);
+}
+
 section#call-action{
-     background-image: url(../img/banner.jpg);
+     background-image: url(../img/banner.webp);
      background-size: cover;
      background-attachment: fixed;
      background-position: center;

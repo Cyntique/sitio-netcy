@@ -33,7 +33,7 @@
         <li><a href="#top"><i class="fas fa-home"></i> <span>Inicio</span></a></li>
         <li><a href="#about"><i class="fas fa-briefcase"></i> <span>Servicio</span></a></li>
         <li><a href="#trabajos"><i class="fas fa-images"></i> <span>Trabajos</span></span></a></li>
-        <li><a href="#blog"><i class="fas fa-newspaper"></i> <span>Blog</span></a></li>
+        <li><a href="#blogs"><i class="fas fa-newspaper"></i> <span>Blog</span></a></li>
         <li><a href="#contact"><i class="fas fa-envelope"></i> <span>Contacto</span></a></li>
     </ul>
     </nav>
@@ -110,17 +110,17 @@
 
 <section id="portfolio" class="container flex-lado">
         <div id="image">
-            <img src="./img/web viviendas.jpg" alt="" class="open-modal" data-open="modal1"> 
+            <img src="./img/web viviendas.webp" alt="" class="open-modal" data-open="modal1"> 
         </div>
         <div id="image">
-            <img src="./img/suraire.jpg" alt="" class="open-modal" data-open="modal2">
+            <img src="./img/suraire.webp" alt="" class="open-modal" data-open="modal2">
         </div>
         
         <div id="image">
-            <img src="./img/webaviacion.jpg" alt="" class="open-modal" data-open="modal3">
+            <img src="./img/webaviacion.webp" alt="" class="open-modal" data-open="modal3">
         </div>
         <div id="image">
-            <img src="./img/gooshe-aike.png" alt="" class="open-modal" data-open="modal4">
+            <img src="./img/gooshe-aike.webp" alt="" class="open-modal" data-open="modal4">
         </div>
        
 </section>
@@ -141,7 +141,7 @@
         También se incluyen videos, información adicional y sección de contacto
         Botón de Whatsapp para que los visitantes puedan hacer consultas rápidas</p>
         <p><a href="https://sergioviviendas.com">Link al sitio web</a></p>
-        <img src="./img/web viviendas.jpg">
+        <img src="./img/web viviendas.webp">
       </section>
       
     </div>
@@ -162,7 +162,7 @@
         </p>
         <p><a href="https://suraireservice.com.ar">Link al sitio web</a></p>
         <p>Animaciones en scroll. Botón de Whatsapp</p>
-        <img src="./img/suraire.jpg">
+        <img src="./img/suraire.webp">
         
       </section>
       
@@ -185,7 +185,7 @@
         </p>
         <p>Incluye sección de presentación y formulario de contacto</p>
         <p><a href="https://aviationart.com.ar">Link al sitio web</a></p>
-        <img src="./img/webaviacion.jpg">
+        <img src="./img/webaviacion.webp">
         
       </section>
       
@@ -207,7 +207,7 @@
         </p>
         <p>Incluye sección de presentación y formulario de contacto</p>
         <p><a href="https://patagoniaglacierstours.com">Link al sitio web</a></p>
-        <img src="./img/gooshe-aike.png">
+        <img src="./img/gooshe-aike.webp">
        
       </section>
       
@@ -221,7 +221,7 @@
   </div>
 </section>
 
-<section class="titulos flex-vertical">
+<section class="titulos flex-vertical" id="blogs">
     <h4>Blog</h4>
     <p>Muy pronto tendremos el blog listo para que puedas conocer más <br>acerca acerca del 
       diseño web y las opciones que existen para promocionar tu negocio
@@ -297,6 +297,31 @@
     </p>
     
 </footer>
+
+<!-- Messenger plugin del chat Code -->
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v10.0'
+    });
+  };
+
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<!-- Your plugin del chat code -->
+<div class="fb-customerchat"
+  attribution="page_inbox"
+  page_id="112531363485696">
+</div>
 
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
