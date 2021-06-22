@@ -1,33 +1,25 @@
 /*****************************************************
 ***********ESTILOS GENERALES**************************
 ******************************************************/
-
-/***
-Color principal: #ff58cc
-Color secundario: #8b99f8
-********/
 *{
     margin: 0;
     max-width: 100%;
+}
+html{
     font-size: 1em;
     line-height: 1.8;
-    font-family: 'Raleway Regular';
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
-body{
-    background-color: rgb(254, 254, 254);
-}
+
 @font-face{
     font-family: 'Monserrat';
     src: url(./fuentes/MontserratAlternates-SemiBold.ttf);
 }
 @font-face{
-    font-family: 'Raleway Regular';
-    src: url(./fuentes/Raleway-Regular.ttf);
-}
-@font-face{
-    font-family: 'Raleway light';
-    src: url(./fuentes/Raleway-Light.ttf);
+    font-family: 'Open sans';
+    src: url(./fuentes/OpenSans-Regular.ttf);
 }
 
 
@@ -38,9 +30,13 @@ h1{
 h2{
     font-family: 'Monserrat';
 }
+h3{
+    font-family: 'Open sans';
+    font-weight: 500;
+}
 
 p{
-    font-family: 'Raleway Regular';
+    font-family: 'Open Sans';
     color: rgb(87, 85, 85);
 }
 img{
@@ -69,14 +65,14 @@ img{
 .titulos h4{
     font-family: 'Monserrat';
     font-size: 3em;
-    color:#8b99f8;
+    color:#1f59df;
     margin-top: 1em;
 }
 
 header{
     height: 5.2em;
     z-index: 99;
-    background-color: rgba(254, 254, 254, 0.993);
+    
 }
 .head{
     position: fixed;
@@ -105,7 +101,7 @@ nav#navi ul#menu{
 nav#navi ul#menu li a{
     text-decoration: none;
     padding-right: 1.4em;
-    color: rgb(65, 65, 65);
+    color: rgb(9, 9, 9);
     align-items: center;
     display: flex;
 }
@@ -132,21 +128,21 @@ nav#navi #logo img{
 div#logo p#title{
     font-family: 'Monserrat';
     font-size: 2em;
-    color: #8b99f8;
+    color: #1751c4;
 }
-section#banner {
-    background-image: url(../img/banner2.webp);
+.banner {
+    background-image: url(../img/impulsando-ideas.webp);
     padding-top: 8em;
     padding-bottom: 3em;
-    background-position: center;
-    background-size: cover;
+    background-position: left;
     text-align: left;
     justify-content: left;
+    height: 30em;
 }
 h3.title-banner {
     font-family: 'Monserrat';
     font-size: 3em;
-    color: white;
+    color: #114aad;
     padding: 1em;
     
 }
@@ -175,7 +171,7 @@ div#bloques .items p{
 }
 div#bloques .items i{
     font-size: 5em;
-    color: #800aa3 ;
+    color: #472ca0 ;
 }
 div#bloques .items i:hover{
     color: #8b99f8;
@@ -189,7 +185,7 @@ div#bloques .items i:hover{
    
 }
 #services-two .box{
-    border: blueviolet solid 1px;
+    border: #472ca0 solid 1px;
     text-align: left;
     padding: 1em;
     margin-right: 10px;
@@ -202,7 +198,7 @@ div#bloques .items i:hover{
 }
 #services-two .box i{
     font-size: 3em;
-    color: #800aa3;
+    color: #472ca0;
     
 }
 #services-two .box i:hover{
@@ -210,20 +206,22 @@ div#bloques .items i:hover{
     animation-duration: 2s;
     
 }
-section#portfolio{
+.portfolio{
     flex-wrap: wrap;
 }
-section#portfolio div#image{
+.portfolio div#image{
     width: 40%;
     margin: 1em;
-    background-color: #4c3ec788;
+    background-color: #1f59df;
+    box-shadow: 2px 2px 6px 3px #5e5e5e;
 }
-section#portfolio div#image img{
+
+.portfolio div#image img{
     height: auto;
     object-fit: cover;
     transition: 0.5s all ease-in-out;
 }
-section#portfolio div#image img:hover{
+.portfolio div#image img:hover{
     transform: scale(0.8);
 }
 
@@ -240,6 +238,7 @@ section#call-action div{
     
 }
 section#call-action h3{
+    font-family: 'Monserrat';
     font-size: 2em;
     color: white;
     
@@ -247,28 +246,7 @@ section#call-action h3{
 section#call-action p {
     color: white;
 }
-#contact {
-    margin-bottom: 6em;
-}
-#contact form{
-    text-align: left;
-    margin-right: 20%;
-    margin-left: 20%;
-    padding-bottom: 2em;
-}
-#contact form input{
-    border: solid gray 1px;
-    border-radius: 10px;
-    margin-bottom: 1em;
-}
-#contact form button{
-    font-size: 2em;
-    width: 40%;
-    align-self: center;
-    background-color:#6c0575;
-    color: white;
-    border: none;
-}
+
 #blog .post {
     width: 25%;
     text-align: center;
@@ -286,7 +264,15 @@ section#call-action p {
     transition: 0.5s all ease-in-out;
 }
 #blog .post img:hover{
-    transform: scale(0.8)
+    transform: scale(0.8);
+}
+.titulos p{
+    padding-left: 4em;
+    padding-right: 4em;
+    text-align: center;
+}
+.socialbox{
+    padding-bottom: 2em;
 }
 .socialbox img{
     max-width: 64px;
@@ -297,6 +283,27 @@ section#call-action p {
     animation-name: uping;
     animation-duration: 2s;
 }
+.contacto{
+    justify-content: space-around;
+    margin-bottom: 6em;
+    padding-top: 2em;
+}
+.contacto .email img:hover{
+    animation-name: uping;
+    animation-duration: 2s;
+    
+}
+.contacto .email span{
+     padding-left: 1em;
+     font-size: 2em;
+}
+.contacto .email a{
+    text-decoration: none;
+    align-self: center;
+    display: flex;
+    color: black;
+}
+
 footer{
     text-align: center;
     padding: 2em;
